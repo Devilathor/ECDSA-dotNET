@@ -25,7 +25,7 @@ public class KeyGen
             byte[] publkey = key.Export(CngKeyBlobFormat.GenericPublicBlob);
             String publkeybase64 = Convert.ToBase64String(publkey);
             var currentDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
-            System.IO.File.WriteAllText(currentDirectory + "pkey.txt", publkeybase64);
+            System.IO.File.WriteAllText(currentDirectory + "pkey", publkeybase64);
         }
         catch (ArgumentNullException)
         {
