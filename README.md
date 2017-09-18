@@ -4,7 +4,7 @@ Create keys, sign data and verify signatures using the ECDSA implementation from
 ## key_gen_cngkey.cs
 
 Generates an ECDsaP256 key pair. 
-The public key is exported in the clear to `pkey.txt`.
+The public key is exported in the clear to `pkey`.
 The private key under the name `"key1"` is stored using Microsoft Software Key Storage Provider as a User-key in folder `\AppData\Roaming\Microsoft\Crypto\Keys`.
 Relevant:
   - https://msdn.microsoft.com/en-us/library/windows/desktop/bb204778(v=vs.85).aspx
